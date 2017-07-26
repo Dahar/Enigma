@@ -1,4 +1,4 @@
-For the  interface to  look
+>For the  interface to  look
 as nice and beautiful as it
 supposed to be You may want
 to connect to the  internet
@@ -7,11 +7,13 @@ browser  would  be  able to
 load  the needed  fonts and 
 styles.
 
-thanks.
+# thanks.
 ===========================
 **Created by:**
+```
 	**Youness	Fkhach**
 	**Rachid	Dahar**
+```
 ===========================
-	__MSOTI 2017__
+    *MSOTI 2017*
 ===========================
