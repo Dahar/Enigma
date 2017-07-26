@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- This site was created by: -->
+<!-- Youness Fkhach -->
+<!-- Rachid Dahar -->
+<!-- MSOTI 2017 -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Enigma</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/css/material.indigo-pink.min.css">
+  <script defer src="assets/js/material.min.js"></script>
+  <script src="assets/js/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Droid Sans:400,700", "Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+      }
+    });
+  </script>
+  <script src="assets/js/modernizr-2.7.1.js" type="text/javascript"></script>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+</head>
+
+<body class="body">
+  <div class="container w-container">
+    <div>
+      <img class="image-2" sizes="(max-width: 479px) 100vw, 228.046875px" src="assets/img/58feb0a1cc436e3ae262b5ca_logo.png">
+    </div>
+    <div class="w-form">
+      <div>
+        <div class="w-row">
+          <div class="column-4 w-col w-col-6">
+            <div class="div-block-2">
+              <textarea id="texte" class="display" readonly=""></textarea>
+            </div>
+            <img id="firstimg" class="image-4" src="assets/img/58fea3c7c8d4825a94d57efa_plack%20copy.png">
+            <img id="pstbtn" class="cpbtn image-4" src="assets/img/paste.png">
+          </div>
+          <div class="column-3 w-col w-col-6">
+            <div class="div-block-2">
+              <textarea id="texteChiffrer" class="display" readonly></textarea>
+            </div>
+            <img id="secondimg" class="image-3" src="assets/img/58fea3d6cc436e3ae262b255_plack2%20copy.png">
+            <img id="cpbtn" class="cpbtn image-3" src="assets/img/copy.png">
+          </div>
+          <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="section middle_section">
+        <div class="row-2 w-row">
+          <div class="w-col w-col-3">
+            <div class="row w-row">
+              <div class="w-col w-col-2"></div>
+              <div class="column-5 w-col w-col-5">
+                <button id="pos3" class="rotor mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" disabled>c</button>
+              </div>
+              <div class="column-6 w-col w-col-3">
+                <a id="3up" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+                <a id="3down" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_down</i></a>
+              </div>
+              <div class="w-col w-col-2"></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="row w-row">
+              <div class="w-col w-col-2"></div>
+              <div class="column-5 w-col w-col-5">
+                <button id="pos2" class="rotor mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" disabled>b</button>
+              </div>
+              <div class="column-7 w-col w-col-3">
+                <a id="2up" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+                <a id="2down" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_down</i></a>
+              </div>
+              <div class="w-col w-col-2"></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="row w-row">
+              <div class="w-col w-col-2"></div>
+              <div class="column-5 w-col w-col-5">
+                <button id="pos1" class="rotor mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" disabled>A</button>
+              </div>
+              <div class="column-8 w-col w-col-3">
+                <a id="1up" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+                <a id="1down" class="button-2 w-button" href="#"><i class="material-icons">keyboard_arrow_down</i></a>
+              </div>
+              <div class="w-col w-col-2"></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="text-block-2"><strong>Encrypt</strong></div>
+            <img id="switcher" class="image" src="assets/img/58fead847e10d442b71c5f77_switch.png">
+            <div class="text-block-2"><strong>decrypt</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="section buttons" align="center">
+        <button id="A" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">A</button><button id="B" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">B</button><button id="C" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">C</button><button id="D" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">D</button><button id="E" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">E</button><button id="F" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">F</button><button id="G" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">G</button><button id="H" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">H</button><button id="I" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">I</button><button id="J" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">J</button>
+        <br>
+        <button id="K" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">K</button><button id="L" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">L</button><button id="M" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">M</button><button id="N" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">N</button><button id="O" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">O</button><button id="P" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">P</button><button id="Q" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">Q</button><button id="R" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">R</button><button id="S" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">S</button>
+        <br>
+        <button id="T" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">T</button><button id="U" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">U</button><button id="V" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">V</button><button id="W" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">W</button><button id="X" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">X</button><button id="Y" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">Y</button><button id="Z" class="char mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">Z</button>
+        <button id="backSpace" class="chari mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons" style="margin: 0px;">backspace</i></button>
+      </div>
+      <div class="w-form-done"></div>
+      <div class="w-form-fail"></div>
+    </div>
+
+    <div class="options">
+      <button id="settings" class="chari mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons" style="margin: 0px;">mode_edit</i></button>
+    </div>
+  </div>
+  <div id="settingsPanel" class="settings">
+    <div class="container w-container">
+      <div><img class="image-2" sizes="(max-width: 479px) 100vw, 228.046875px" src="assets/img/58feb0a1cc436e3ae262b5ca_logo.png"></div>
+      <div class="selectRotorsTitle text-block-3" >Select Rotors:</div>
+      <div class="w-form">
+        <form data-name="Email Form" id="email-form" name="email-form">
+          <div>
+            <div class="w-row">
+              <div class="w-col w-col-4">
+                <div><span class="text-span-3"><strong xmlns="http://www.w3.org/1999/xhtml">First Rotor:</strong></span>
+                </div>
+                <select class="w-select" id="rotor1" name="field">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              </div>
+              <div class="w-col w-col-4">
+                <div><span class="text-span-3"><strong xmlns="http://www.w3.org/1999/xhtml">Second Rotor:</strong></span>
+                </div>
+                <select class="w-select" data-name="Field 2" id="rotor2" name="field-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              </div>
+              <div class="w-col w-col-4">
+                <div><span class="text-span-3"><strong xmlns="http://www.w3.org/1999/xhtml">Third Rotor:</strong></span>
+                </div>
+                <select class="w-select" data-name="Field 3" id="rotor3" name="field-3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="w-form-done"></div>
+        <div class="w-form-fail"></div>
+      </div>
+      <div class="text-block-3 selectRotorsTitle">Select Reflector:</div>
+      <div class="w-form">
+        <form data-name="Email Form" id="email-form" name="email-form">
+          <div class="section-2" style="text-align: right;">
+            <select class="w-select" data-name="Field 5" id="reflector" name="field-5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <div class="text-block-3 selectRotorsTitle" style="margin-top: 20px;">PlugBoard:</div>
+          <div id="connect-dots" class="connect-dots">
+              <div id="dots" class="section buttons" align="center">
+                <!--Dots take place here -->
+              </div>
+          </div>
+            <a id="connect-dots-empty" class="savebtn button-3 w-button" href="#">CLEAR</a>
+            <a id="savebtn" class="savebtn button-3 w-button" href="#">SAVE</a>
+          </div>
+
+        </form>
+        <div class="w-form-done"></div>
+        <div class="w-form-fail"></div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/webflow.js" type="text/javascript"></script>
+  <script type="text/javascript" src="assets/js/enigma.js"></script>
+  <script type="text/javascript" src="assets/js/jsPlumb.js"></script>
+  <script type="text/javascript" src="assets/js/plugBoard.js"></script>
+</body>
+
+</html>
