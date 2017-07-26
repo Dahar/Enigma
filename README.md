@@ -9,9 +9,9 @@ styles.
 
 thanks.
 ===========================
-Created by:
-	Youness	Fkhach
-	Rachid	Dahar
+**Created by:**
+	**Youness	Fkhach**
+	**Rachid	Dahar**
 ===========================
-	MSOTI 2017
+	__MSOTI 2017__
 ===========================
